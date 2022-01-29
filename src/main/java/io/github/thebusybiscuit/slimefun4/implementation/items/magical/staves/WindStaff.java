@@ -52,6 +52,7 @@ public class WindStaff extends SimpleSlimefunItem<ItemUseHandler> {
                     }
                 }
 
+                player.performCommand("cmbtlogitemdisable");
                 p.setVelocity(p.getEyeLocation().getDirection().multiply(multiplier.getValue()));
                 p.getWorld().playSound(p.getLocation(), Sound.ENTITY_TNT_PRIMED, 1, 1);
                 p.getWorld().playEffect(p.getLocation(), Effect.SMOKE, 1);
