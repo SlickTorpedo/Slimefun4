@@ -84,7 +84,6 @@ public class GrapplingHook extends SimpleSlimefunItem<ItemUseHandler> {
                 bat.setSilent(true);
                 bat.addPotionEffect(new PotionEffect(PotionEffectType.INVISIBILITY, 100000, 100000));
                 bat.setLeashHolder(arrow);
-                p.performCommand("cmbtlogitemdisable");
 
                 boolean state = item.getType() != Material.SHEARS;
                 Slimefun.getGrapplingHookListener().addGrapplingHook(p, arrow, bat, state, despawnTicks.getValue(), isConsumed);
