@@ -156,6 +156,7 @@ public class GrapplingHookListener implements Listener {
         if (arrow != null && arrow.isValid() && arrow.getShooter() instanceof Player) {
             Player p = (Player) arrow.getShooter();
             GrapplingHookEntity hook = activeHooks.get(p.getUniqueId());
+            p.performCommand("cmbtlogitemdisable");
 
             if (hook != null) {
                 Location target = arrow.getLocation();
